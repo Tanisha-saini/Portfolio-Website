@@ -43,6 +43,11 @@ nav{
   display: flex;
   list-style: none;
   gap: 3rem;
+  font-weight: 600;
+}
+
+nav h1{
+  font-weight: 600;
 }
 
 nav ul a{
@@ -163,7 +168,7 @@ nav ul a{
 }
 
 #about-para{
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.7rem;
   padding: 1rem 0;
@@ -222,7 +227,7 @@ nav ul a{
 .skill{
   height: 5rem;
   transition:0.5s ease-in-out;
-  padding: 1rem 2rem 0 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   -webkit-transition:0.5s ease-in-out;
   -moz-transition:0.5s ease-in-out;
   -ms-transition:0.5s ease-in-out;
@@ -231,6 +236,8 @@ nav ul a{
 
 .image-caption{
   text-align: center;
+  font-weight: 600;
+  padding-bottom: 1rem;
 }
 
 /* Projects */
@@ -370,18 +377,17 @@ footer {
   margin: 40px 0;
 }
 
+#footer-part-right h1{
+  font-size:3.2rem ;
+  letter-spacing: -2px;
+
+}
+
 footer h4{
   display: flex;
   margin: 0.5rem 0;
 }
 
-footer h1{
-  color: var(--clr-primary);
-  font-size: 4rem; 
-  font-weight: 900;
-  white-space: nowrap;
-  letter-spacing: -2px;
-}
 
 footer h1 a{
   color:var(--clr-primary);
@@ -566,16 +572,22 @@ footer h1 a{
   }
   
   .skill{
-    height: 3rem;
+    height: 5rem;
+    padding: 1rem 2rem 1rem 2rem;
+
   }
 
   #skill-h1{
     margin-bottom: 3rem;
   }
 
+  .image-caption{
+    font-weight: 500;
+  }
+
   #skills-gifs {
     height: 4rem;
-}
+  }
 
   #corner{
     display: none;
