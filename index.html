@@ -1,196 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tanisha Saini | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=BhuTuka Expanded One' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=BhuTuka Expanded One"
+      rel="stylesheet"
+    />
     <script defer src="index.js"></script>
     <script src="particles.js-master/particles.js"></script>
-    <script defer src="/particles.js-master/demo/js/app.js"></script>
-    <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
-    <!-- <script src="zdog-demo.js"></script> -->
     <script src="anime.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="particles-js"></div>
 
     <!-- Navigation Bar -->
     <nav>
-        <h1>< Tanisha/></h1>
-        <ul class="menu-opt">
-            <a href="#menu-opt"><li>Home</li></a>
-            <a href="#about"><li>About</li></a>
-            <a href="#projects" style="color:#65c9ff;"><li>Projects</li></a>
-            <a href="#footer"><li>Contact</li></a>
-        </ul>
+      <h1>< Tanisha/></h1>
+      <ul class="menu-opt">
+        <a href="#menu-opt"><li>Home</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#work-experience"><li>Experience</li></a>
+        <a href="#education"><li>Education</li></a>
+        <a href="#skills"><li>Skills</li></a>
+        <a href="#projects" style="color: #65c9ff"><li>Projects</li></a>
+        <a href="#footer"><li>Contact</li></a>
+      </ul>
     </nav>
 
     <!-- Head Section -->
     <div id="main-head">
-        <div id="head-text-wrapper">
-            <h1 id="head-text">Hello World <span><img id="hello-gifs" src="assets/hello.gif"></span>, I am</h1>
-            <div id="container">
-                <span id="text1"></span>
-                <span id="text2"></span>
-            </div>
+      <div id="head-text-wrapper">
+        <h1 id="head-text">
+          Hello World
+          <span><img id="hello-gifs" src="assets/hello.gif" /></span>, I am
+        </h1>
+        <div id="container">
+          <span id="text1"></span>
+          <span id="text2"></span>
         </div>
-        <img id="main-head-img" src="./assets/avataaars.png">
+      </div>
+      <img id="main-head-img" src="./assets/avataaars.png" />
     </div>
-    
+
     <svg id="filters">
-        <defs>
-            <filter id="threshold">
-                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+      <defs>
+        <filter id="threshold">
+          <feColorMatrix
+            in="SourceGraphic"
+            type="matrix"
+            values="1 0 0 0 0
                                         0 1 0 0 0
                                         0 0 1 0 0
-                                        0 0 0 255 -140" />
-            </filter>
-        </defs>
+                                        0 0 0 255 -140"
+          />
+        </filter>
+      </defs>
     </svg>
-    
+
     <!-- About Me -->
     <div id="about">
-        <div id="about-text">
-            <h1 id="about-h1">About me 📑</h1>
-            <p id="about-para">Hello everyone, I am Tanisha Saini, pursuing MCA from IGDTUW, Delhi. As an aspiring software engineer, I am passionate about exploring new technologies and leveraging them to develop innovative solutions that can make a difference in people's lives.</p>
-            <p id="about-para">Throughout my academic journey, I have gained hands-on experience in programming languages such as C++, Python, and various other tools and frameworks in development. Besides technical skills, I have also worked upon my problem-solving and analytical skills that are crucial in software development.</p>
+      <div id="about-text">
+        <h1 id="about-h1">About me 📑</h1>
+        <p id="about-para">
+          Hello everyone, I am Tanisha Saini, pursuing MCA from IGDTUW, Delhi.
+          As an aspiring software engineer, I am passionate about exploring new
+          technologies and leveraging them to develop innovative solutions that
+          can make a difference in people's lives.
+        </p>
+        <p id="about-para">
+          Throughout my academic journey, I have gained hands-on experience in
+          programming languages such as C++, Python, and various other tools and
+          frameworks in development. Besides technical skills, I have also
+          worked upon my problem-solving and analytical skills that are crucial
+          in software development.
+        </p>
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div id="work-experience">
+      <h1 id="work-experience-h1">Work Experience 💼</h1>
+      <div class="underline"></div>
+      <div id="work-experience-container">
+        <div class="timeline">
+          <!-- Job 1 -->
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <span class="timeline-date">07/2024 – present</span>
+              <h3>Associate Software Engineer</h3>
+              <h4>@Bain & Company</h4>
+              <ul>
+                <li>
+                  Designed and developed a graph-based team recommendation
+                  engine to optimize staffing decisions, improving project
+                  outcomes and stakeholder satisfaction.
+                </li>
+                <li>
+                  Developed an expert engagement tracking platform by
+                  consolidating data from multiple sources and automating fraud
+                  and compliance workflows.
+                </li>
+                <li>
+                  Utilized Azure Logic Apps, Functions, and Microsoft Graph API
+                  to trigger real-time alerts and streamline monitoring of
+                  expert usage thresholds.
+                </li>
+              </ul>
+              <p class="job-tech">
+                Tech Stack: Neo4j, Graph Data Science (GDS), Python, SQL, Logic
+                App, Azure Functions, Blob Storage, Microsoft Graph API,
+                Streamlit, OpenAI
+              </p>
+            </div>
+          </div>
+          <!-- Job 2 -->
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <span class="timeline-date">01/2024 – 06/2024</span>
+              <h3>Software Engineer Intern</h3>
+              <h4>@Bain & Company</h4>
+              <ul>
+                <li>
+                  Leveraged OpenAI's Chat Completion API to design and build an
+                  inhouse summarization tool.
+                </li>
+                <li>
+                  Developed AI-powered test case generation & enhanced agile
+                  planning (sprint & backlog).
+                </li>
+              </ul>
+              <p class="job-tech">
+                Tech Stack: C#, .Net, Web API, Blazor, SQL Server, Hangfire,
+                SignalR, OpenAI, Prompt Engineering, GitHub
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education">
+      <h1 id="education-h1">Education 🎓</h1>
+      <div class="underline"></div>
+      <div id="education-cards">
+        <div class="edu-card">
+          <h3 class="degree">Masters of Computer Applications</h3>
+          <h4 class="college">
+            @Indira Gandhi Delhi Technical University for Women
+          </h4>
+          <p class="edu-duration">2022 – 2024</p>
+          <p class="edu-cgpa">CGPA: 8.2/10</p>
+          <p class="edu-location">Delhi, India</p>
+        </div>
+        <div class="edu-card">
+          <h3 class="degree">B.Sc. Computer Science (Hons.)</h3>
+          <h4 class="college">
+            @Shyama Prasad Mukherjee College for Women, DU
+          </h4>
+          <p class="edu-duration">2019 – 2022</p>
+          <p class="edu-cgpa">CGPA: 8.54/10</p>
+          <p class="edu-location">Delhi, India</p>
+        </div>
+      </div>
     </div>
 
     <!-- Skills -->
     <div id="skills">
-        <h1 id="skill-h1">What I know<span><img id="skills-gifs" src="assets/skills.png"></span></h1>
-        <div id="skill-all">
-            <div class="card">
-                <img class="skill" src="assets/c-.png" alt="c++">
-                <p class="image-caption">C++</p>
-            </div>
-            <div class="card">
-                <img class="skill" src="assets/html5.png" alt="html5">
-                <p class="image-caption">HTML</p>
-            </div>
-            <div class="card">
-                <img class="skill" src="assets/css-3.png" alt="css3">
-                <p class="image-caption">CSS</p>
-            </div>
-            <div class="card">
-                <img class="skill" src="assets/js.png" alt="js">
-                <p class="image-caption">JS</p>
-            </div>
-            <div class="card">
-                <img class="skill" src="assets/python.png" alt="python">
-                <p class="image-caption">Python</p>
-
-            </div>
-            <div class="card">
-                <img class="skill" src="assets/java.png" alt="python">
-                <p class="image-caption">Java</p>
-
-            </div>
-            <div class="card">
-                <img class="skill" src="assets/sql-server.png" alt="sql">
-                <p class="image-caption">SQL</p>
-            </div>
-            <div class="card">
-                <img class="skill" src="assets/wordpress.png" alt="wordpress">
-                <p class="image-caption">Wordpress</p>
-            </div>
-            <div class="card">
-                <img class="skill" src="assets/figma.png" alt="figma">
-                <p  class="image-caption">Figma</p>
-            </div>
-            <div class="card">
-                <img class="skill" src="assets/sass.png" alt="sass">
-                <p  class="image-caption">SASS</p>
-            </div>
+      <h1 id="skill-h1">Skills 💻</h1>
+      <div class="skills-category">
+        <h2>Languages & Frameworks</h2>
+        <div class="skill-all">
+          <div class="card">
+            <img class="skill" src="assets/python.png" alt="Python" />
+            <p class="image-caption">Python</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/fastapi.png" alt="FastAPI" />
+            <p class="image-caption">FastAPI</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/react.png" alt="React" />
+            <p class="image-caption">React</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/c-.png" alt="C++" />
+            <p class="image-caption">C++</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/c-.png" alt="C#" />
+            <p class="image-caption">C#</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/html5.png" alt="HTML" />
+            <p class="image-caption">HTML</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/css-3.png" alt="CSS" />
+            <p class="image-caption">CSS</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/js.png" alt="JavaScript" />
+            <p class="image-caption">JavaScript</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/aspnet.png" alt="ASP .NET" />
+            <p class="image-caption">ASP .NET</p>
+          </div>
         </div>
+      </div>
+
+      <div class="skills-category">
+        <h2>Databases</h2>
+        <div class="skill-all">
+          <div class="card">
+            <img class="skill" src="assets/sql-server.png" alt="SQL" />
+            <p class="image-caption">SQL Server</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/neo4j.png" alt="Neo4j" />
+            <p class="image-caption">Neo4j</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h2>Tools & Libraries</h2>
+        <div class="skill-all">
+          <div class="card">
+            <img class="skill" src="assets/azure.png" alt="Azure" />
+            <p class="image-caption">Azure</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/firebase.png" alt="Firebase" />
+            <p class="image-caption">Firebase</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/figma.png" alt="Figma" />
+            <p class="image-caption">Figma</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/hangfire.png" alt="Hangfire" />
+            <p class="image-caption">Hangfire</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/genai.png" alt="GenAI" />
+            <p class="image-caption">GenAI</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/streamlit.png" alt="Streamlit" />
+            <p class="image-caption">Streamlit</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/git.png" alt="Git" />
+            <p class="image-caption">Git</p>
+          </div>
+          <div class="card">
+            <img class="skill" src="assets/github.png" alt="GitHub" />
+            <p class="image-caption">GitHub</p>
+          </div>
+          <!-- Add more as needed -->
+        </div>
+      </div>
     </div>
-    
+
     <!-- Projects -->
     <div id="projects">
-        <h1 id="project-h1">Projects👩‍💻</span></h1>
-        <div id="project-inner">
-            <!-- <div id="project-list">
-                <a href="https://tanisha-saini.github.io/QR-Code-Generator/" target="_blank"><img src="assets/qr-code-gen.png"></a>
-                <div id="to-link">
-                    <a href="https://tanisha-saini.github.io/QR-Code-Generator/" target="_blank"><img  src="assets/redirect.png"></a>
-                    <a href="https://github.com/Tanisha-saini/QR-Code-Generator" target="_blank"><img  src="assets/github.png"></a>
-                </div>
-                <h2>QR Code Generator</h2>
-                <p>This is just one stupid paragraph written as a dummy text for description of the project</p>
-            </div> -->
-        </div>
-    </div>  
+      <h1 id="project-h1">Projects👩‍💻</h1>
+      <div id="project-inner">
+        <!-- Projects will be dynamically generated here by JavaScript -->
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer id="footer">
-        <div id="footer-parts">
-            <div id="corner">
-                <div id="rectangle"> 
-                    <div id="mini-rectangle"></div>
-                    <canvas id="star" width="300" height="250"></canvas>
+      <div id="footer-parts">
+        <div id="footer-part-right">
+          <h4>✉️ Contact me at</h4>
+          <h1>
+            <a href="mailto:tanishasaini.work@gmail.com"
+              >tanishasaini.work@gmail.com</a
+            >
+          </h1>
 
-                </div>
-                <div id="semi">
-                    <img src="assets/avataaars.png">
-                </div>
-            </div>
-            <div id="footer-part-right">
-                <h4>✉️ Contact me at</h4>
-                <h1><a href="mailto:tanishasaini.work@gmail.com">tanishasaini.work@gmail.com</a></h1>
-                
-                <div class="social">
-                    <ul class="wrapper">
-                        <a href="https://www.linkedin.com/in/tanisha-saini/" target="_blank">
-                            <li class="icon linkedin">
-                                <span class="tooltip">LinkedIn</span>
-                                <span><i class="fab fa-linkedin fa-lg"></i></span>
-                            </li>
-                        </a>
-                        <a href="https://github.com/Tanisha-saini" target="_blank">
-                            <li class="icon github">
-                                <span class="tooltip">GitHub</span>
-                                <span><i class="fab fa-github fa-lg"></i></span>
-                            </li>
-                        </a>
-        
-        
-                        <a href="https://leetcode.com/Tanisha_saini/" target="_blank">
-                            <li class="icon Leetcode">
-                                <span class="tooltip">Leetcode</span>
-                                <span><img src="assets/LeetCode.png"></span>
-                            </li>
-                        </a>
-                        
-                        <a href="https://www.codechef.com/users/tanisha_saini" target="_blank">
-                            <li class="icon codechef">
-                                <span class="tooltip">Codechef</span>
-                                <span><img src="assets/codechef.png"></span>
-                            </li>
-                        </a>
-        
-                        <a href="https://www.hackerrank.com/tanishasaini484" target="_blank">
-                            <li class="icon hackerrank">
-                                <span class="tooltip">Hackerrank</span>
-                                <span><img src="assets/hackerrank3.png"></span>
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-            <div id="mini-wrapper">
-                <div id="mini-rectangle2"></div>
-            </div>
-            
-            
+          <div class="social">
+            <ul class="wrapper">
+              <a
+                href="https://www.linkedin.com/in/tanisha-saini/"
+                target="_blank"
+              >
+                <li class="icon linkedin">
+                  <span class="tooltip">LinkedIn</span>
+                  <span><i class="fab fa-linkedin fa-lg"></i></span>
+                </li>
+              </a>
+              <a href="https://github.com/Tanisha-saini" target="_blank">
+                <li class="icon github">
+                  <span class="tooltip">GitHub</span>
+                  <span><i class="fab fa-github fa-lg"></i></span>
+                </li>
+              </a>
+
+              <a href="https://leetcode.com/Tanisha_saini/" target="_blank">
+                <li class="icon Leetcode">
+                  <span class="tooltip">Leetcode</span>
+                  <span><img src="assets/LeetCode.png" /></span>
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
-        
-    </div>
-</footer>
-
-
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
