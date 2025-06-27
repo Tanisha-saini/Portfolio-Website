@@ -15,13 +15,13 @@
     <script src="anime.min.js"></script>
   </head>
   <body>
-    <div id="particles-js"></div>
+    <!-- <div id="particles-js"></div> -->
 
     <!-- Navigation Bar -->
     <nav>
       <h1>< Tanisha/></h1>
       <ul class="menu-opt">
-        <a href="#menu-opt"><li>Home</li></a>
+        <a href="#hero"><li>Home</li></a>
         <a href="#about"><li>About</li></a>
         <a href="#work-experience"><li>Experience</li></a>
         <a href="#education"><li>Education</li></a>
@@ -31,52 +31,36 @@
       </ul>
     </nav>
 
-    <!-- Head Section -->
-    <div id="main-head">
-      <div id="head-text-wrapper">
-        <h1 id="head-text">
-          Hello World
-          <span><img id="hello-gifs" src="assets/hello.gif" /></span>, I am
-        </h1>
-        <div id="container">
-          <span id="text1"></span>
-          <span id="text2"></span>
-        </div>
-      </div>
-      <img id="main-head-img" src="./assets/avataaars.png" />
+    <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-img-wrapper">
+      <img src="assets/avataaars.png" alt="Profile" class="hero-img" />
     </div>
-
-    <svg id="filters">
-      <defs>
-        <filter id="threshold">
-          <feColorMatrix
-            in="SourceGraphic"
-            type="matrix"
-            values="1 0 0 0 0
-                                        0 1 0 0 0
-                                        0 0 1 0 0
-                                        0 0 0 255 -140"
-          />
-        </filter>
-      </defs>
-    </svg>
+    <h1 class="hero-title">
+      Hello <span class="highlight">World</span>
+    </h1>
+    <p class="hero-desc">
+      Welcome to my portfolio! I am Tanisha Saini, a passionate software engineer who loves building creative solutions.<br>
+      <span class="hero-desc-small">
+        (All information below is true to the best of my knowledge)
+      </span>
+    </p>
+    <a href="#about" class="hero-btn">Download Resume</a>
+    <div class="hero-fade-bottom"></div>
+  </section>
 
     <!-- About Me -->
     <div id="about">
       <div id="about-text">
         <h1 id="about-h1">About me 📑</h1>
         <p id="about-para">
-          Hello everyone, I am Tanisha Saini, pursuing MCA from IGDTUW, Delhi.
-          As an aspiring software engineer, I am passionate about exploring new
-          technologies and leveraging them to develop innovative solutions that
-          can make a difference in people's lives.
+          I'm a Software Engineer with a passion for building impactful digital solutions and a knack for combining intelligent automation with user-centric design. Currently, I'm contributing to cutting-edge internal tools at Bain & Company, where I’ve engineered systems ranging from AI-powered summarization tools to a graph-based team recommendation engine that optimizes staffing decisions.
         </p>
         <p id="about-para">
-          Throughout my academic journey, I have gained hands-on experience in
-          programming languages such as C++, Python, and various other tools and
-          frameworks in development. Besides technical skills, I have also
-          worked upon my problem-solving and analytical skills that are crucial
-          in software development.
+          With a strong academic foundation—MCA from IGDTUW and a B.Sc. in Computer Science from Delhi University—I thrive at the intersection of data-driven development and innovative product design. I’ve led and developed real-world projects like Make Even, an intergenerational communication platform for Google Solution Challenge’23, and MediCube, a centralized healthcare tech system.
+        </p>
+        <p id="about-para">
+          My technical stack is anchored in Python, Flask, REST APIs, React, SQL/NoSQL databases, and Azure cloud services. I also bring hands-on experience with RAG pipelines, and production-grade tools like Hangfire for job scheduling and Figma for design collaboration. Beyond the code, I bring forward a mindset shaped by team collaboration, problem-solving, and a passion for continuous learning.
         </p>
       </div>
     </div>
@@ -279,6 +263,7 @@
     <!-- Footer -->
     <footer id="footer">
       <div id="footer-parts">
+        <div id="footer-part-left"></div>
         <div id="footer-part-right">
           <h4>✉️ Contact me at</h4>
           <h1>
@@ -317,4 +302,17 @@
       </div>
     </footer>
   </body>
+  <script>
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');
+      const hero = document.getElementById('hero');
+      if (!nav || !hero) return;
+      const heroBottom = hero.getBoundingClientRect().bottom;
+      if (heroBottom <= 0) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+    </script>
 </html>
