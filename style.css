@@ -562,6 +562,19 @@ footer h1 a{
     margin-top: 0%;
     font-size: 1.3rem;
   }
+
+  #hero{
+    padding: 1rem !important;
+  }
+
+  .hero-img{
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  #work-experience, #education, #skills{
+    margin-bottom: 4rem !important;
+  }
   
   #text1, #text2{
     font-size: 12vw;
@@ -570,6 +583,10 @@ footer h1 a{
   #about-h1, #skill-h1, #project-h1, #work-experience-h1, #education-h1{
     font-size: 1.5rem !important;
     text-align: center !important;
+  }
+
+  .timeline{
+    padding: 20px 0 !important;
   }
 
   .timeline::before {
@@ -587,23 +604,28 @@ footer h1 a{
   .timeline-item.right {
     left: 0;
     text-align: left;
+    padding-left: 1rem !important;
   }
   
   .timeline-content {
-    padding: 1.5rem;
+    padding: 1.5rem !important;
     /* margin-left: 20px; Space from timeline line */
   }
   
   .timeline-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem !important;
   }
   
   .timeline-item h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem !important;
   }
   
   .timeline-date {
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
+  }
+
+  .underline{
+    margin-bottom: 0 !important;
   }
 
   .edu-card{
@@ -649,6 +671,10 @@ footer h1 a{
 
   #corner{
     display: none;
+  }
+
+  #footer{
+    margin-top: 5rem !important;
   }
 
   #footer-parts{
