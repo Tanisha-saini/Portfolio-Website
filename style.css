@@ -9,7 +9,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background-color: #181818; */
+}
+
+html{
+  background-color: #181818;
 }
 
 *:focus,
@@ -254,6 +257,7 @@ nav.scrolled{
   font-size: 1.2rem;
   line-height: 1.7rem;
   padding: 1rem 0;
+  text-align: justify;
 }
 
 /* Skills */
@@ -563,8 +567,53 @@ footer h1 a{
     font-size: 12vw;
   }
 
-  #about-h1, #skill-h1, #project-h1{
+  #about-h1, #skill-h1, #project-h1, #work-experience-h1, #education-h1{
     font-size: 2rem;
+  }
+
+  #work-experience #work-experience-h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .timeline::before {
+    left: 0% !important; /* Move timeline line to the left on mobile */
+  }
+  
+  .timeline-item {
+    width: 100% !important;
+    padding: 20px 0px !important;/* Add left padding for timeline line */
+    left: 0 !important; /* Force all items to left side */
+    text-align: left !important; /* Force left alignment */
+  } 
+  
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+    /* margin-left: 20px; Space from timeline line */
+  }
+  
+  .timeline-item h3 {
+    font-size: 1.5rem;
+  }
+  
+  .timeline-item h4 {
+    font-size: 1.3rem;
+  }
+  
+  .timeline-date {
+    font-size: 1.1rem;
+  }
+
+  .edu-card{
+    min-width: 0px !important;
+    flex: 1 1 100% !important;
   }
 
   #project-h1{
@@ -672,7 +721,7 @@ footer h1 a{
 }
 
 /* Responsive Design for new sections */
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   #experience-h1, #education-h1 {
     font-size: 2.5rem;
   }
@@ -693,7 +742,7 @@ footer h1 a{
   .job-description {
     font-size: 1rem;
   }
-}
+} */
 
 #work-experience {
   display: flex;
@@ -905,16 +954,6 @@ footer h1 a{
 .edu-location {
   font-size: 0.95rem;
   color: #b0b3b8;
-}
-
-@media (max-width: 900px) {
-  #education-cards {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .edu-card {
-    max-width: 100%;
-  }
 }
 
 .skills-category {
